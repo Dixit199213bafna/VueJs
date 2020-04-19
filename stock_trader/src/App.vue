@@ -1,8 +1,8 @@
 <template>
   <div id="app" class="container">
     <app-header></app-header>
-    <router-view/>
-  </div>
+        <router-view/>
+    </div>
 </template>
 
 <script>
@@ -12,9 +12,14 @@ export default {
   name: 'App',
   components: {
     appHeader: Header
+  },
+  created () {
+    this.$store.dispatch('initStocks')
   }
 }
 </script>
-
 <style>
+  body {
+    padding: 30px;
+  }
 </style>

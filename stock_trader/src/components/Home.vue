@@ -1,6 +1,10 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1>Tarde or view your portfolio</h1>
+    <h6>You may save and load your Data</h6>
+    <h6>Click on Day End to begin new day</h6>
+    <hr/>
+    <p>Your funds {{ funds }}</p>
   </div>
 </template>
 
@@ -9,15 +13,8 @@ export default {
   name: 'Home',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      funds: this.$store.getters.funds
     }
   }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-</style>
