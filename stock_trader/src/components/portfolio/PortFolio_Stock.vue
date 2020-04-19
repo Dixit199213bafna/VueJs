@@ -27,7 +27,7 @@ export default {
   },
   computed: {
     insufficientQuantity () {
-      return this.quantity > this.stock.quantity
+      return parseInt(this.quantity) > parseInt(this.stock.quantity)
     }
   },
   methods: {

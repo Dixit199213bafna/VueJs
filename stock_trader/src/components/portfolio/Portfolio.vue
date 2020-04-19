@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Stock from './Stock'
+import Stock from './PortFolio_Stock'
 import { mapGetters } from 'vuex'
 export default {
   computed: {
